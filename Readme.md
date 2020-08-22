@@ -1,9 +1,18 @@
 # Getting Started
 
-* Ensure Docker is up and running
+* Ensure Docker is up and running and you're logged in
+
+# Pulling from the registry
+```
+$ docker run noguile/user-api
+```
+
+# Building
 
 ### Run
 ```
+$ git clone https://github.com/NathBabs/user-api.git
+$ cd user-api
 $ npm install
 ```
   
