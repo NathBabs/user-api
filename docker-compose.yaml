@@ -1,0 +1,19 @@
+version: "3.7"
+services: 
+    db:
+        image: postgres
+        environment: 
+            POSTGRES_PASSWORD: admin
+            POSTGRES_USER: postgres
+            POSTGRES_DB: user-api
+        volumes: 
+            - ./pgdata:/var/lib/postgresql/data
+        ports: 
+            - "5432:5432"
+        network_mode: "host"
+    api:
+        image: noguile/user-api
+        depends_on:
+             - db
+        ports:
+             - "5000:5000"

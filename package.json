@@ -1,0 +1,24 @@
+{
+  "name": "user-api",
+  "version": "1.0.0",
+  "description": "simple users crud API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Nathaniel Babalola",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.3.2",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.4",
+    "sleep": "^6.3.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.4"
+  }
+}
